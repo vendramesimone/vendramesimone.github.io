@@ -28,6 +28,7 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 
     <!-- favicons
     ================================================== -->
@@ -148,6 +149,93 @@
         <!-- end home-social -->
 
     </section> <!-- end s-home -->
+	
+	
+	 <!-- services
+    ================================================== -->
+ 	<model-viewer src="simo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="0.4">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+	<section id='services' class="s-services">
+	
+      <!--  <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">IN COSA POSSO ESSERTI UTILE</h3>
+                <h1 class="display-2">CIO' CHE REALIZZO E CREO</h1>
+            </div>
+        </div>
+-->
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-right">
+					<img src="images/img/sitirop.png" style="filter: drop-shadow(3px 3px 3px #868686);">
+			</div>
+			<div class="col-block service-item">
+                    <h3 class="h2" align="center">PAGINE WEB</h3>
+					<p>Creazione di pagine web in codice HTML e in wordpress</p>
+					<button class="full-width btn--primary" style="color: #39b54a; background-color:white; border-color: #39b54a;">Apri</button> 
+            </div>
+		</div>
+        <div class="row services-list block-1-2 block-tab-full">
+			<div class="col-block service-item">
+               
+                <div class="service-text">
+                    <h3 class="h2" align="center">FOTO</h3>
+					<p>Servizi otograici per este ed eventi</p>
+					<button class="full-width btn--primary" style=" color: #39b54a; background-color:white; border-color: #39b54a; ">Apri</button>
+                </div>
+            </div>
+			<div class="col-block service-item" data-aos="fade-left">
+              
+                <div class="service-text">
+					<img src="images/img/photos.png" style="filter: drop-shadow(3px 3px 3px #868686);">
+                </div>
+            </div>
+		</div>
+		<div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-right">
+              
+                <div class="service-text">
+					<img src="images/img/ILLUSTRATION.png">
+                </div>
+            </div>
+			<div class="col-block service-item">
+               
+                <div class="service-text">
+                    <h3 class="h2" align="center">GRAICHE</h3>
+					<p>Creazione di graiche personalizzate e modiiche photoshop, locandine ecc.</p>
+					<button class="full-width btn--primary" style="color: #39b54a; background-color:white; border-color: #39b54a;">Apri</button>
+                </div>
+            </div>
+		</div>
+		<div class="row services-list block-1-2 block-tab-full">
+			<div class="col-block service-item"> 
+                <div class="service-text">
+                    <h3 class="h2" align="center">EETTI INSTAGRAM</h3>
+					<p>Eetti visivi creati per instgram</p>
+					<button class="full-width btn--primary" style="color: #39b54a; background-color:white; border-color: #39b54a;">Apri</button>
+                </div>
+            </div>
+			<div class="col-block service-item" data-aos="fade-left">
+                <div class="service-text">
+					<img src="images/img/filtri.jpg">
+                </div>
+            </div>
+        </div> 
+		<p> </p>
+		<p> </p>
+<div class="about__line"></div>
+    </section> 
+	
 
 
     <!-- about
@@ -161,7 +249,7 @@
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row about-desc" data-aos="fade-up">
+       <!-- <div class="row about-desc" data-aos="fade-up">
             <div class="col-full">
                 <p style="font-family: 'Inter-Regular', sans-serif; font-size: 90%">
 					Sono un ragazzo di 22 anni diplomato in informatica all'istituto tecnico Vito Volterra di San Donà di Piave e ora studio ingegneria informatica all'Università degli Studi di Trieste.
@@ -193,74 +281,15 @@
 
         </div> <!-- end about-stats -->
 
-        <div class="about__line"></div>
+       
 
     </section> <!-- end s-about -->
 
 
-    <!-- services
-    ================================================== -->
-    <section id='services' class="s-services">
-
-        <div class="row section-header has-bottom-sep" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">IN COSA POSSO ESSERTI UTILE</h3>
-                <h1 class="display-2">CIO' CHE REALIZZO E CREO</h1>
-            </div>
-        </div> <!-- end section-header -->
-
-        <div class="row services-list block-1-2 block-tab-full">
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <!--<div class="service-icon">
-                    <i class="fa fa-globe" aria-hidden="true"></i>
-                </div>
-				--->
-                <div class="service-text">
-					<img src="images/img/WEBDESIGN.png">
-					<h3 class="h2" align="center">PAGINE WEB</h3>
-					
-					<button class="full-width btn--primary" style="background-color: #92ccfd; border-color: #92ccfd ">Apri</button>
-                </div>
-            </div>
-            <div class="col-block service-item" data-aos="fade-up">
-                <!--<div class="service-icon">
-                    <i class="fa fa-camera"></i>
-                </div>
-				--->
-                <div class="service-text">
-					<img src="images/img/FOTO.png">
-                    <h3 class="h2" align="center">FOTO</h3>
-					<a href=""><button class="full-width btn--primary" style="background-color: #fde592; border-color: #fde592 ">Apri</button></a>
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">                
-                <div class="service-text">
-					<img src="images/img/ILLUSTRATION.png">
-                    <h3 class="h2" align="center">GRAFICHE</h3>
-					<a href=""><button class="full-width btn--primary" style="background-color: #9c92fd; border-color: #9c92fd ">Apri</button></a>                    
-                </div>
-            </div>
-
-            <div class="col-block service-item" data-aos="fade-up">
-                <div class="service-text">
-					<img src="images/img/INSTAGRAM.png">
-                    <h3 class="h2" align="center">EFFETTI INSTAGRAM</h3>
-					<a href=""><button class="full-width btn--primary" style="background-color: #fdc292; border-color: #fdc292 ">Apri</button></a>                    
-                </div>
-            </div>
-
-
-        </div> <!-- end services-list -->
-		<p> </p>
-		<p> </p>
-
-    </section> <!-- end s-services -->
-
-
+   
     <!-- works
     ================================================== -->
+	
 	
 	<section id="works" class="s-works">
 
@@ -775,3 +804,4 @@
 
 </body>
 
+</html>
