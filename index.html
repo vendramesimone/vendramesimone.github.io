@@ -34,7 +34,11 @@
     ================================================== -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
 	<style type="text/css">.disclaimer { display: none; }</style>
+	
 </head>
 
 <body id="top">
@@ -153,17 +157,62 @@
 	
 	 <!-- services
     ================================================== -->
- 	<model-viewer src="simo.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" exposure="0.4">
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
-    </div>
-    <button slot="ar-button" id="ar-button">
-        View in your space
-    </button>
-    <div id="ar-prompt">
-        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-    </div>
-</model-viewer>
+ 	<section id='about' class="s-services" style="padding-top: 10vh; height: 100vh; background-color: #2B2B2B; max-width: 100vw; max-height: 100vh;">
+		
+		<div class="demo" style="overflow-x: hidden;">
+ 			<div style="background-blend-mode:darken;">
+				
+				<div style="width: 50%; float: left; text-align: center;">
+					<span style="font-size: 3.7vw; line-height: 40vh; left: 50%; transform: translateX(-50%); font-family: 'Syne', sans-serif;">
+					<p><a style="color: white; ">SITI WEB</a><br><a style="color: #39b54a;" href="https://www.google.it">FOTO</a></p>
+					</span>
+				</div>
+				<div style="width: 50%; float: right; text-align: center;">
+					<span style="font-size: 3.7vw; line-height: 40vh; left: 50%; transform: translateX(-50%); font-family: 'Syne', sans-serif;">
+					<a style="color: #39b54a;">GRAFICHE</a><br><a style="color: white;">EFFETTI</a></span>
+				</div>
+		
+				
+			</div>
+			<div style="width: 33%; pointer-events: none;">
+				<model-viewer src="simo (2).glb" disable-tap auto-rotate disable-zoom exposure="0.6" style=" position: absolute; height:100vh; width:100%; background-color: unset;" >
+					<div class="progress-bar hide" slot="progress-bar">
+						<div class="update-bar"></div>
+					</div>
+				</model-viewer>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--<div class="row services-list block-1-2 block-tab-full" style="padding-top: 0;">
+			<div class="col-block service-item">
+				<model-viewer src="simo (2).glb" camera-controls disable-tap auto-rotate disable-zoom exposure="0.6" style="height:100vh; width:100%; padding-bottom:5vh; background-color: unset;" >
+					<div class="progress-bar hide" slot="progress-bar">
+						<div class="update-bar"></div>
+					</div>
+				</model-viewer>
+			</div>
+			<div class="col-block service-item" style="justify-content: center;">
+				<h1 style="color: #39b54a;">CIAO, SONO SIMONE VENDRAME</h1>
+                <p style="font-family: 'Inter-Regular', sans-serif;">
+					
+				<!--Sono un ragazzo di 22 anni diplomato in informatica all'istituto tecnico Vito Volterra di San Donà di Piave e ora studio ingegneria informatica all'Università degli Studi di Trieste.
+				Amo il mondo dell'informatica quanto quello dei contenuti multimediali e adoro il calcio e lo sport in generale.
+				Creo siti web, realizzo grafiche e scatto fotografie per eventi e al mondo che ci circonda.
+				Negli ultimi anni ho realizzato parecchi contenuti quali siti internet, loghi, effetti instagram, cover art e scatti davvero apprezzati. 
+                </p>
+			</div>
+		</div> -->
+	<div class="about__line"></div>
+	</section>
 	<section id='services' class="s-services">
 	
       <!--  <div class="row section-header has-bottom-sep" data-aos="fade-up">
@@ -233,7 +282,7 @@
         </div> 
 		<p> </p>
 		<p> </p>
-<div class="about__line"></div>
+
     </section> 
 	
 
