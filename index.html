@@ -53,7 +53,11 @@
 				background-color: white;
 			}
 	</style>
-	
+	<model-viewer src="simone.glb" disable-tap auto-rotate disable-zoom exposure="0.6" style=" position: absolute; height:100vh; width:100%; background-color: unset; display: none;"  >
+					<div class="progress-bar hide" slot="progress-bar">
+						<div class="update-bar"></div>
+					</div>
+	</model-viewer>
 </head>
 
 <body id="top">
@@ -117,7 +121,7 @@
 
     
     <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
+		
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
 
@@ -182,7 +186,7 @@
 				
 			</div>
 			<div style="width: 33%; pointer-events: none;">
-				<model-viewer src="model12.glb" disable-tap auto-rotate disable-zoom exposure="0.6" style=" position: absolute; height:100vh; width:100%; background-color: unset;" >
+				<model-viewer src="simone.glb" disable-tap auto-rotate disable-zoom exposure="0.6" style=" position: absolute; height:100vh; width:100%; background-color: unset;" >
 					<div class="progress-bar hide" slot="progress-bar">
 						<div class="update-bar"></div>
 					</div>
